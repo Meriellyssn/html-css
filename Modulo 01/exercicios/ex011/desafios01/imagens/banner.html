@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Banner Responsivo</title>
+</head>
+<body>
+    <h1> O Banner Responsivo</h1>
+    <p>O objetivo é criar uma página HTML que exiba um banner. Este banner deverá mudar a imagem mostrada dependendo da largura da janela do navegador.</p>
+
+    <picture>
+        <source media="(max-width: 830px)" srcset="banner-pequeno.jpg" type="image/jpg">
+        <source media="(max-width: 1230px)" srcset="banner-medio.jpg" type="image/jpg">
+        <img src="banner-grande.jpg" alt="Imagens responsivas">
+    </picture>
+
+</body>
+</html>

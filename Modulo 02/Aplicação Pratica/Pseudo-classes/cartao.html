@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando um Cartão de Perfil Interativo</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            background-color: lightpink;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 2px 2px 12px rgba(0,0,0,0.1); /* Adiciona uma sombra sutil */
+            transition: background-color 0.3s ease; /* Transição suave para a mudança de cor */
+        }
+
+        div p {
+            display: none;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #000000;
+            background-color: lightpink;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        div:hover {
+            background-color: lightblue;
+        }
+
+        div:hover p {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Passe o mouse aqui para ver os detalhes.</h1>
+        <p>Texto escondido: Este cartão foi feito em HTML e CSS!</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-BR"> <!-- Início do documento HTML. 
+O atributo lang="pt-BR" indica que o idioma principal da página é português do Brasil. -->
+<head>
+    <meta charset="UTF-8">  <!-- Define a codificação de caracteres como UTF-8, 
+    que permite o uso de acentos e caracteres especiais. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a exibição da página para diferentes tamanhos de tela (responsividade),
+    muito usado em dispositivos móveis. -->
+    <title>Videos com HTML5</title> <!-- Define o título da página que aparece na aba do navegador. -->
+</head>
+<body> <!-- Início do conteúdo visível da página. -->
+    <h1>Inserindo videos hospedados localmente.</h1>  <!-- Cabeçalho principal da página. -->
+    <p>Este video esta hospedado no meu prorio servidor.</p>
+    <video controls width="560" height="315" poster="imagens/limoes-capa.png"> <!-- A tag <video> insere um vídeo na página.
+         - controls: adiciona controles de reprodução (play, pause, volume etc.).
+         - width / height: define a largura e altura do vídeo.
+         - poster: imagem que será exibida como "capa" do vídeo antes da reprodução. -->
+        <source src="midea/lemons.mp4" type="video/mp4">
+        <source src="midea/lemons.webm" type="video/webm">
+        <source src="midea/lemons-original.mp4" type="video/mp4"> <!-- Define uma fonte de vídeo no formato MP4, WEBM, OGV... 
+        Se o navegador suportar esse formato, ele será usado. -->
+        <p>Seu navegador nao suporta o elemento de video.</p> <!-- Texto que aparece se o navegador do usuário não suportar a tag <video>. -->
+    </video>
+    <hr>
+    <h1>Inserindo videos do Youtube</h1> 
+    <p>Este video esta hospedado no Youtube.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jPWsBuiy1rE?si=-g-jB7eiO5RtuEAV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!-- A tag <iframe> é usada para incorporar conteúdo de outra fonte, como um vídeo do YouTube.
+         - width / height: define a largura e altura do iframe.
+         - src: URL do vídeo do YouTube a ser incorporado.
+         - title: título descritivo para acessibilidade.
+         - frameborder: define a borda do iframe (0 significa sem borda).
+         - allow: especifica permissões para o conteúdo incorporado.
+         - referrerpolicy: controla o envio de informações de referência.
+         - allowfullscreen: permite que o vídeo seja exibido em tela cheia. -->
+    <hr>
+    <h1>Inserindo videos do Vimeo</h1>
+    <p>Este video esta hospedado no Vimeo.</p>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/185871317?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:50%;height:50%;" title="Simone Cirillo - 2016 Character Animation Reel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> <!-- A tag <iframe> é usada para incorporar conteúdo de outra fonte, como um vídeo do Vimeo.
+         - O <div> com estilo inline é usado para manter a proporção do vídeo (16:9).
+         - O iframe dentro do div incorpora o vídeo do Vimeo.
+         - frameborder: define a borda do iframe (0 significa sem borda).
+         - allow: especifica permissões para o conteúdo incorporado.
+         - referrerpolicy: controla o envio de informações de referência.
+         - style: define o posicionamento e tamanho do iframe para preencher o contêiner pai.
+         - title: título descritivo para acessibilidade.
+         - O script externo carrega a API do player do Vimeo para funcionalidades adicionais. -->
+</body>
+</html>

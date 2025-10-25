@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a:link {
+            color: rgb(255, 0, 0); /* Cor do link não visitado */
+            text-decoration: none; /* Remove o sublinhado */
+            font-weight: bold; /* Deixa o texto em negrito */
+        }
+        a:visited {
+            color: rgb(107, 0, 128); /* Cor do link visitado */
+        }
+        a:hover {
+            color: rgb(0, 0, 0); /* Cor do link ao passar o mouse */
+            text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+        }
+        a:active {
+            color: orange; /* Cor do link quando clicado */
+        }
+
+        a::after {
+            content: "🔗"; /* Adiciona texto após o link */
+            font-size: 0.8em; /* Diminui o tamanho da fonte do texto adicional */
+            font-weight: normal; /* Remove o negrito do texto adicional */
+            color: gray; /* Cor do texto adicional */
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li ><a href="https://github.com" target="_blank" >Repositorio GitHub</a></li>
+        <li><a href="https://youtube.com" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://cursoemvideo.com" target="_blank">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

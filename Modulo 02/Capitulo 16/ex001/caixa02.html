@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: segoe ui, Arial, sans-serif;
+            margin: 20px;
+            padding: 10px;
+            box-sizing: border-box; /* Inclui padding e border na largura total dos elementos */
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h2, h3 { /*Elementos de título*/
+            color: #004a99;
+            font-weight: bold;
+        }
+
+        header, nav, main, section, article { /* Box-level elements */
+           
+            margin: 10px;
+            padding: 10px;
+        }
+
+        header { 
+            background-color: #0062c5f0; /*Cabeçalho do documento*/
+            color: white;
+            
+            
+        }
+
+        nav { /*Navegação do documento*/
+            background-color: #004a99;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: rgba(160, 160, 160, 0.338) 0px 2px 5px;
+            
+        }
+
+        nav ul li {
+            display: inline; /*Itens de navegação em linha*/
+            margin-right: 10px;
+        }
+
+        nav ul li a { /*Links de navegação*/
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        nav a:hover { /*Efeito hover nos links de navegação*/
+            color: #ffcc00;
+        }
+
+        main { /*Conteúdo principal do documento*/
+            display: flex;
+            border-radius: 10px 10px;
+            justify-content: space-between; /* cria espaço entre os elementos */
+            align-items: flex-start;        /* alinha pelo topo */
+            background-color: #cedde8e0;
+        }
+
+        section { /*Seção do documento*/
+            flex: 4; /* Ocupa 3 partes */
+            margin: 10px;
+            padding: 10px;
+        }
+
+        article { /*Artigo do documento*/
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: #e0e0e08f 0px 2px 5px;
+        }
+
+        article p {
+            text-align: justify;
+        }
+
+        article p:hover { /*Efeito hover no artigo*/
+            background-color: #d4d4d423;
+        }
+
+        aside { /*Conteúdo relacionado ao artigo*/
+            flex: 2;           /* ocupa 1 parte */
+            max-width: 250px;  /* limite de largura */
+            padding: 10px;
+            margin: 30px;
+            background-color: #ffffff;
+            border-radius: 5px;
+        
+        }
+        aside a { /*Links do conteúdo relacionado*/
+            text-decoration: none;
+            color: #333;
+        }
+        aside a:hover { /*Efeito hover nos links do conteúdo relacionado*/
+            color: #9f8311;
+;
+        }
+
+        footer { /*Rodapé do documento*/
+            background-color: #0062c5f0;
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 5px;
+        }
+
+        footer p {
+            margin: 0;
+            padding: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <header> <!--Cabeçaho do documento-->
+        <h1>TechNews</h1>
+        <nav> <!--Navegação do documento-->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main> <!--Conteúdo principal do documento-->
+        <section> <!--Sção do documento-->
+            <article>
+                <h2>Novo celular lançado no Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe earum dolore doloremque debitis ipsum perferendis quisquam, accusamus impedit est voluptates recusandae nesciunt at unde a, vitae nam sit adipisci obcaecati.
+                </p>
+            </article>
+        </section>
+        <section> <!--Sção do documento-->
+            <article>
+                <h2>Inteligência artificial ganha espaço no mercado</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe earum dolore doloremque debitis ipsum perferendis quisquam, accusamus impedit est voluptates recusandae nesciunt at unde a, vitae nam sit adipisci obcaecati.
+                </p>
+            </article>
+        </section>
+        <aside class="barra-lateral"> <!--Conteúdo relacionado ao artigo-->
+            <h3>Curiosidades rápidas</h3>
+            <ul>
+                <li><a href="#">Você sabia que o primeiro computador pesava mais de 30 toneladas?</a></li>
+                <li><a href="#">O email foi inventado antes da internet moderna</a></li>
+                <li><a href="#">O email foi inventado antes da internet moderna</a></li>
+                <li><a href="#">O email foi inventado antes da internet moderna</a></li>
+                <li><a href="#">O email foi inventado antes da internet moderna</a></li>
+                <li><a href="#">O email foi inventado antes da internet moderna</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer> <!--Rodapé do documento-->
+        <p>Desenvolvido por MS Desing - 2025</p>
+
+    </footer>
+</body>
+</html>

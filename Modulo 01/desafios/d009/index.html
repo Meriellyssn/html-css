@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Desafio Videos</title>
+    <style>
+        /* CSS interno para estilizar a página */
+
+        body {
+            background-color: rgb(246, 212, 224); /* Cor de fundo rosa claro */
+            font-family: Arial, sans-serif; /* Fonte padrão do texto */
+            text-align: center; /* Centraliza o conteúdo da página */
+            margin: 20px; /* Espaçamento externo da página */
+        }
+
+        h1 {
+            color: #333; /* Cor cinza escura para o título */
+        }
+
+        hr {
+            margin: 20px 0; /* Espaçamento acima e abaixo da linha horizontal */
+        }
+
+        a {
+            display: inline-block; /* Faz os links ficarem em bloco (para alinhar lado a lado) */
+            margin: 10px; /* Espaçamento entre os links */
+            text-decoration: none; /* Remove o sublinhado dos links */
+        }
+
+        img {
+            width: 200px; /* Largura fixa das imagens */
+            height: auto; /* Mantém a proporção original */
+            border: 2px solid #ccc; /* Borda cinza clara */
+            border-radius: 8px; /* Arredonda os cantos da imagem */
+            transition: transform 0.2s; /* Animação suave ao passar o mouse */
+        }
+
+        img:hover {
+            transform: scale(1.05); /* Aumenta um pouco a imagem no hover */
+            border-color: #666; /* Muda a cor da borda quando o mouse passa */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Videos Legais para Assistir</h1>
+    <hr>
+    <!-- Linha horizontal separando o título do conteúdo -->
+
+    <!-- Cada <a> é um link para outra página com vídeo.
+         Dentro de cada link, foi inserida uma imagem em miniatura (thumbnail). -->
+
+    <a href="curso-html.html">
+        <img src="imagens/thumb-html.png" alt="Video sobre HTML">
+    </a>
+    <a href="curso-hardware.html">
+        <img src="imagens/thumb-hardware.png" alt="Video sobre Hardware">
+    </a>
+
+    <br>
+    <!-- Quebra de linha, para que os dois próximos links fiquem embaixo -->
+
+    <a href="curso-python.html">
+        <img src="imagens/thumb-python.png" alt="Video sobre PYTHON">
+    </a>
+    <a href="curso-js.html">
+        <img src="imagens/thumb-js.png" alt="Video sobre JavaScript">
+    </a>
+    <p>Aprimore seus conhecimentos com cursos excelente!</p>
+</body>
+</html>

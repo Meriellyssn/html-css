@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    position: relative;
+    padding-right: 20px; /* Espaço para o ícone */
+}
+
+a::before {
+    content: "→  "; /* Ícone de seta para direita */
+    color: rgb(255, 85, 0);
+
+}
+
+a:hover {
+    color: rgb(255, 85, 0);
+    /*text-decoration: underline;*/
+}
+
+a::after {
+    content: " 🔗"; /* Texto adicional */
+    color: rgba(14, 106, 186, 0.568);
+}
