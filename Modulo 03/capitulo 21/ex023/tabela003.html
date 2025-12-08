@@ -8,6 +8,7 @@
         table { /* Estilo da tabela */
             width: 70vw;
             border-collapse: collapse;
+            position: relative;
         }
         th, td { /* Células da tabela */
             border: 1px solid black;
@@ -25,6 +26,13 @@
         thead, tfoot { /* Cabeçalho da tabela */
             background-color: gray;
             color: white;
+        }
+
+        thead tr th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+            z-index: 2;
         }
 
         tbody tr:nth-child(odd) { /*Efeito Zebrado*/
